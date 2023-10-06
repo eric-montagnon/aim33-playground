@@ -1,0 +1,35 @@
+import React from "react";
+import styled from "@emotion/native";
+import { useTheme } from "@emotion/react";
+import { View } from "react-native";
+
+import { ThemeColor } from "@src/shared/view/theme/colors.types";
+
+import { Spacer } from "../Spacer/Spacer.component";
+import { Typography } from "../Typography/Typography.component";
+
+export const InputBox = styled.TextInput(({ theme }) => ({
+  flex: 1,
+  color: theme.colors.textNormal,
+  fontFamily: theme.fonts.paragraph.p1.regular.fontFamily,
+  fontSize: theme.fonts.paragraph.p1.regular.fontSize,
+}));
+
+type LabelProps = {
+  label: string;
+  labelColor: ThemeColor;
+  nativeId: string;
+};
+
+export const Label = ({ label, labelColor, nativeId }: LabelProps) => {
+  const theme = useTheme();
+
+  return (
+    <View>
+      <Typography.P1 color={labelColor} nativeID={nativeId} accessible={false}>
+        {label}
+      </Typography.P1>
+      <Spacer vertical={theme.spaces.xs} />
+    </View>
+  );
+};
