@@ -1,0 +1,13 @@
+node_modules
+package.json
+.eslintrc.js
+dist
+__mocks__
+jest.config.js
+eslintrc-tests.js
+.github
+.cache
+ios
+android
+.expo
+coverage

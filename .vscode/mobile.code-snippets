@@ -1,0 +1,79 @@
+{
+    "React Native Component": {
+      "prefix": "rncomponent",
+      "body": [
+        "import styled from '@emotion/native';",
+        "import React, { FunctionComponent } from 'react';",
+        "",
+        "interface Props {",
+        "  ${2:readonly}: ${3:boolean};",
+        "}",
+        "",
+        "export const ${1:Template}: FunctionComponent<Props> = ({ ${2:readonly} }) => {",
+        "  return <Container></Container>;",
+        "};",
+        "",
+        "const Container = styled.View(() => ({",
+        "  flex: 1,",
+        "}));",
+        ""
+      ],
+      "description": "React Native Component"
+    },
+    "React Native Snapshot test": {
+      "prefix": "rnsnapshot",
+      "body": [
+        "import React from 'react';",
+        "import { wrapAndRender } from '@src/shared/helpers/jest/render';",
+        "import { ${1:ComponentName} } from './${1:ComponentName}.component';",
+        "",
+        "describe('${1:ComponentName} component', () => {",
+        "it('renders correctly', () => {",
+        "wrapAndRender(<${1:ComponentName} />);",
+        "expect(screen).toMatchComponentSnapshot();",
+        "});",
+        "});",
+        ""
+      ],
+      "description": "React Native Snapshot test"
+    },
+    "Generate get-mock function": {
+      "prefix": "mock",
+      "body": [
+        "import { ${2: Item} } from '@src/modules/${1:item}/view/${1:item}.entity';",
+        "",
+        "const ${1:item}Mock: ${2: Item} = {",
+        "  id: '${1:item}-id',",
+        "};",
+        "",
+        "export const get${2: Item}Mock = (params?: Partial<${2: Item}>): ${2: Item} => {",
+        "  return { ...${1:item}Mock, ...params };",
+        "};"
+      ],
+      "description": "Generate get-mock function"
+    },
+    "lingui": {
+      "prefix": "_i18n",
+      "body": ["i18n._(", "  t({", "    id: `${1}`,", "    comment: '${2}',", "  })", ")"],
+      "description": "lingui"
+    },
+    "Test each": {
+      "prefix": "rntesteach",
+      "body": [
+        "describe('${1}', () => {",
+        "  test.each`",
+        "    ${2:input} | ${3:expected value}",
+        "      | ",
+        "  `(",
+        "    'returns \"$${3}\"',",
+        "    ({ ${2}, ${3} }) => {",
+        "      ${4}",
+        "    }",
+        "  );",
+        "});",
+        ""
+      ],
+      "description": "Test each"
+    }
+  }
+  
