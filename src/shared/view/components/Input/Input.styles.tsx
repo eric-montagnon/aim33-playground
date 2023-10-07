@@ -1,12 +1,11 @@
-import React from "react";
 import styled from "@emotion/native";
 import { useTheme } from "@emotion/react";
+import React from "react";
 import { View } from "react-native";
 
+import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
+import { Typography } from "@src/shared/view/components/Typography/Typography.component";
 import { ThemeColor } from "@src/shared/view/theme/colors.types";
-
-import { Spacer } from "../Spacer/Spacer.component";
-import { Typography } from "../Typography/Typography.component";
 
 export const InputBox = styled.TextInput(({ theme }) => ({
   flex: 1,

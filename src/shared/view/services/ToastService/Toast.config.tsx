@@ -1,10 +1,10 @@
-import type { ReactElement } from 'react';
-import React from 'react';
-import type { BaseToastProps } from 'react-native-toast-message';
+import type { ReactElement } from "react";
+import React from "react";
+import type { BaseToastProps } from "react-native-toast-message";
 
-import { ToastType } from '@src/shared/view/services/ToastService/Toast.service.interface';
+import { ToastType } from "@src/shared/view/services/ToastService/Toast.service.interface";
 
-import { Toast } from './Toast.component';
+import { Toast } from "./Toast.component";
 
 export interface ToastNotificationProps {
   title: string;

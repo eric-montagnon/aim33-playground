@@ -1,29 +1,28 @@
-import { fireEvent, screen } from '@testing-library/react-native';
-import * as React from 'react';
+import { fireEvent, screen } from "@testing-library/react-native";
+import * as React from "react";
 
-import { wrapAndRender } from '@src/testing/render';
+import { wrapAndRender } from "@src/shared/helpers/jest/render";
+import { TextArea } from "./TextArea.component";
 
-import { TextArea } from './TextArea.component';
-
-describe('Testing TextArea Component', () => {
-  it('should render the label and placeholder', () => {
+describe("Testing TextArea Component", () => {
+  it("should render the label and placeholder", () => {
     wrapAndRender(
       <TextArea label="mock label" placeholder="mock placeholder" />,
     );
 
-    expect(screen.getByText('mock label')).toBeTruthy();
-    expect(screen.getByPlaceholderText('mock placeholder')).toBeTruthy();
+    expect(screen.getByText("mock label")).toBeTruthy();
+    expect(screen.getByPlaceholderText("mock placeholder")).toBeTruthy();
   });
 
-  it('should not render the error label and error icon', () => {
+  it("should not render the error label and error icon", () => {
     wrapAndRender(
       <TextArea label="mock label" placeholder="mock placeholder" />,
     );
 
-    expect(screen.queryByTestId('error-icon')).toBeFalsy();
+    expect(screen.queryByTestId("error-icon")).toBeFalsy();
   });
 
-  it('should render the error label and error icon', () => {
+  it("should render the error label and error icon", () => {
     wrapAndRender(
       <TextArea
         label="mock label"
@@ -32,11 +31,11 @@ describe('Testing TextArea Component', () => {
       />,
     );
 
-    expect(screen.getByText('mock error label')).toBeTruthy();
-    expect(screen.getByTestId('error-icon')).toBeTruthy();
+    expect(screen.getByText("mock error label")).toBeTruthy();
+    expect(screen.getByTestId("error-icon")).toBeTruthy();
   });
 
-  it('should call onChangeText when text is typed in TextArea', () => {
+  it("should call onChangeText when text is typed in TextArea", () => {
     const mockOnChange = jest.fn();
 
     wrapAndRender(
@@ -47,16 +46,16 @@ describe('Testing TextArea Component', () => {
       />,
     );
 
-    fireEvent.changeText(screen.getByPlaceholderText('mock placeholder'), 'ab');
+    fireEvent.changeText(screen.getByPlaceholderText("mock placeholder"), "ab");
 
-    expect(mockOnChange).toHaveBeenCalledWith('ab');
+    expect(mockOnChange).toHaveBeenCalledWith("ab");
   });
 
-  it('should be disabled when isDisabled is true', () => {
+  it("should be disabled when isDisabled is true", () => {
     wrapAndRender(
       <TextArea label="mock label" placeholder="mock placeholder" isDisabled />,
     );
 
-    expect(screen.getByPlaceholderText('mock placeholder')).toBeDisabled();
+    expect(screen.getByPlaceholderText("mock placeholder")).toBeDisabled();
   });
 });

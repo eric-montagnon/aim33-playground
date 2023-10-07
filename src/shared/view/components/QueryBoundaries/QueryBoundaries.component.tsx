@@ -1,10 +1,10 @@
-import { QueryErrorResetBoundary } from '@tanstack/react-query';
-import React from 'react';
-import type { FallbackProps } from 'react-error-boundary';
-import { ErrorBoundary } from 'react-error-boundary';
+import { QueryErrorResetBoundary } from "@tanstack/react-query";
+import React from "react";
+import type { FallbackProps } from "react-error-boundary";
+import { ErrorBoundary } from "react-error-boundary";
 
-import { ErrorView } from '@src/shared/view/components/ErrorView/ErrorView.component';
-import { LoaderView } from '@src/shared/view/components/LoaderView/LoaderView.component';
+import { ErrorView } from "@src/shared/view/components/ErrorView/ErrorView.component";
+import { LoaderView } from "@src/shared/view/components/LoaderView/LoaderView.component";
 
 export type ErrorFallbackProps = FallbackProps;
 

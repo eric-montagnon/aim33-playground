@@ -1,8 +1,8 @@
 import { ViewStyle } from "react-native";
 
-import { ThemeColor } from "@src/shared/view/theme/colors.types";
-import { colors } from "@src/shared/view/theme/colors";
 import { IconButtonState } from "@src/shared/view/components/IconButton/IconButton.component";
+import { colors } from "@src/shared/view/theme/colors";
+import { ThemeColor } from "@src/shared/view/theme/colors.types";
 
 const defaultContainerStyle: ViewStyle = {
   paddingVertical: 8,
@@ -27,7 +27,7 @@ export const iconButtonStyle: IconButtonStyle = {
   },
   disabled: {
     container: defaultContainerStyle,
-    iconColor: (_?: ThemeColor) => colors.grey200,
+    iconColor: () => colors.grey200,
   },
 };
 
@@ -47,7 +47,7 @@ export const iconButtonWithBorderStyle: IconButtonWithBorderStyle = {
     }),
   },
   disabled: {
-    container: (_?: ThemeColor) => ({
+    container: () => ({
       borderWidth: 1,
       borderRadius: 40,
       borderColor: colors.grey200,

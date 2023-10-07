@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-export type ToastType = 'error' | 'info' | 'success' | 'warning';
+export type ToastType = "error" | "info" | "success" | "warning";
 
-export type ToastPosition = 'top' | 'bottom';
+export type ToastPosition = "top" | "bottom";
 
 interface ShowToastParams {
   title: string;

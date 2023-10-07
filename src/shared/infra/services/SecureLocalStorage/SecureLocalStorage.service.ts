@@ -1,6 +1,6 @@
-import * as SecureStore from 'expo-secure-store';
+import * as SecureStore from "expo-secure-store";
 
-import { ISecureLocalStorage } from './SecureLocalStorage.service.interface';
+import { ISecureLocalStorage } from "./SecureLocalStorage.service.interface";
 
 const getStringItem = async (key: string): Promise<string | null> => {
   return await SecureStore.getItemAsync(key);

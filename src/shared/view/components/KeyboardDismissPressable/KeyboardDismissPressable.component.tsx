@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
-import { Keyboard } from 'react-native';
+import React, { ReactNode } from "react";
+import { Keyboard } from "react-native";
 
-import { KeyboardDismissPressable as KeyboardDismisser } from '@src/shared/view/components/KeyboardDismissPressable/KeyboardDismissPressable.styles';
+import { KeyboardDismissPressable as KeyboardDismisser } from "@src/shared/view/components/KeyboardDismissPressable/KeyboardDismissPressable.styles";
 type KeyboardDismissPressableProps = {
   children: ReactNode;
 };

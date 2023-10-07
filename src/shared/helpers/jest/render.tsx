@@ -1,10 +1,10 @@
-import { ThemeProvider } from '@emotion/react';
-import { queryClient } from '@src/shared/infra/clients/queryClient';
+import { ThemeProvider } from "@emotion/react";
+import { queryClient } from "@src/shared/infra/clients/queryClient";
 
-import { QueryBoundaries } from '@src/shared/view/components/QueryBoundaries/QueryBoundaries.component';
-import { ToastService } from '@src/shared/view/services/ToastService/Toast.service';
-import { theme } from '@src/shared/view/theme/theme';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryBoundaries } from "@src/shared/view/components/QueryBoundaries/QueryBoundaries.component";
+import { ToastService } from "@src/shared/view/services/ToastService/Toast.service";
+import { theme } from "@src/shared/view/theme/theme";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   RenderOptions,
   // eslint-disable-next-line testing-library/no-manual-cleanup
@@ -12,9 +12,9 @@ import {
   render,
   screen,
   waitFor,
-} from '@testing-library/react-native';
-import React from 'react';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+} from "@testing-library/react-native";
+import React from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 // This may seem like a hack but it's reliable. afterEach hooks always run when we expect them too
 let afterEachHook: (() => void) | undefined = undefined;
@@ -94,8 +94,8 @@ afterEach(() => {
 
 export const waitForLoaders = () => {
   return waitFor(() => {
-    const loader = screen.queryByTestId('activity-indicator');
-    if (loader) throw new Error('Loader still visible');
+    const loader = screen.queryByTestId("activity-indicator");
+    if (loader) throw new Error("Loader still visible");
   });
 };
 
@@ -117,7 +117,7 @@ const assertNoPendingQueries = (queryClient: QueryClient) => {
     .getMutationCache()
     .findAll({})
     // The `filter` param of `.findAll` seems to be unreliable, so we filter manually (v3.16.0 de react-query, might have changed that)
-    .filter((mutation) => mutation.state.status === 'loading');
+    .filter((mutation) => mutation.state.status === "loading");
 
   if (pendingMutations.length > 0) {
     throw new Error(`${pendingMutations.length} mutations still pending`);

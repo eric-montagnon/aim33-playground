@@ -1,14 +1,13 @@
-import React from "react";
-import { storiesOf } from "@storybook/react-native";
 import styled from "@emotion/native";
 import { useTheme } from "@emotion/react";
+import { storiesOf } from "@storybook/react-native";
+import React from "react";
 
 import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
-import { StorySubSection } from "@src/shared/view/storybook/StorySubSection/StorySubSection.component";
 import { Typography } from "@src/shared/view/components/Typography/Typography.component";
-
-import { StoryPage } from "../../storybook/StoryPage/StoryPage.component";
-import { StorySection } from "../../storybook/StorySection/StorySection.component";
+import { StoryPage } from "@src/shared/view/storybook/StoryPage/StoryPage.component";
+import { StorySection } from "@src/shared/view/storybook/StorySection/StorySection.component";
+import { StorySubSection } from "@src/shared/view/storybook/StorySubSection/StorySubSection.component";
 
 storiesOf("Spacer", module).add("Spacer", () => {
   return <Story />;

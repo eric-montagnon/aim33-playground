@@ -1,5 +1,5 @@
-import styled from '@emotion/native';
+import styled from "@emotion/native";
 
 export const Container = styled.View(() => ({
-  width: '100%',
+  width: "100%",
 }));

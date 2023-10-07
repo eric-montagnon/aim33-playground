@@ -3,12 +3,12 @@ import { StyleProp, View, ViewStyle } from "react-native";
 
 import { ThemeColor } from "@src/shared/view/theme/colors.types";
 
-import { Typography } from "../Typography/Typography.component";
+import { Typography } from "@src/shared/view/components/Typography/Typography.component";
+import { ErrorIcon } from "@src/shared/view/icons/Error.icon";
+import { InfoIcon } from "@src/shared/view/icons/Info.icon";
+import { SuccessIcon } from "@src/shared/view/icons/Success.icon";
+import { WarningIcon } from "@src/shared/view/icons/Warning.icon";
 import { tooltipContentContainerStyle, tooltipStyle } from "./Tooltip.styles";
-import { InfoIcon } from "../../icons/Info.icon";
-import { SuccessIcon } from "../../icons/Success.icon";
-import { WarningIcon } from "../../icons/Warning.icon";
-import { ErrorIcon } from "../../icons/Error.icon";
 
 const TOOLTIP_ICON_SIZE_PX = 24;
 

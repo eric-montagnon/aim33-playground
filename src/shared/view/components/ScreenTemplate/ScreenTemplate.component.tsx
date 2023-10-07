@@ -1,11 +1,11 @@
-import React from 'react';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import React from "react";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { CustomScrollView } from '@src/shared/view/components/CustomScrollView/CustomScrollView.component';
-import { QueryBoundaries } from '@src/shared/view/components/QueryBoundaries/QueryBoundaries.component';
-import { ScreenContainer } from '@src/shared/view/components/ScreenTemplate/ScreenTemplate.styles';
+import { CustomScrollView } from "@src/shared/view/components/CustomScrollView/CustomScrollView.component";
+import { QueryBoundaries } from "@src/shared/view/components/QueryBoundaries/QueryBoundaries.component";
+import { ScreenContainer } from "@src/shared/view/components/ScreenTemplate/ScreenTemplate.styles";
 
-import { Spacer } from '@src/shared/view/components/Spacer/Spacer.component';
+import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 
 type Props = {
   header?: React.ReactNode;

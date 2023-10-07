@@ -1,10 +1,10 @@
 import React, { useCallback } from "react";
 
-import { IconType } from "@src/shared/view/icons/Icon.types";
 import { PressableWithFeedback } from "@src/shared/view/components/PressableWithFeedback/PressableWithFeedback";
+import { IconType } from "@src/shared/view/icons/Icon.types";
 
+import { Typography } from "@src/shared/view/components/Typography/Typography.component";
 import { ICON_SIZE_PX, tagStyle } from "./Tag.styles";
-import { Typography } from "../Typography/Typography.component";
 
 export type TagVariant = "default" | "valid" | "error" | "disabled";
 
@@ -26,7 +26,7 @@ export const Tag = ({
   // https://www.bam.tech/article/how-insidious-reactnative-onpress-could-be
   const handlePress = useCallback(
     () => (onPress ? onPress() : undefined),
-    [onPress]
+    [onPress],
   );
 
   return (

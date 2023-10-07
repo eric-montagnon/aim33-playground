@@ -2,8 +2,8 @@ import {
   DefaultOptions,
   focusManager,
   QueryClient,
-} from '@tanstack/react-query';
-import { AppState } from 'react-native';
+} from "@tanstack/react-query";
+import { AppState } from "react-native";
 
 const noop = () => undefined;
 
@@ -29,9 +29,9 @@ const createQueryClient = () => {
   return queryClient;
 };
 
-AppState.addEventListener('change', (nextAppState) => {
+AppState.addEventListener("change", (nextAppState) => {
   // This is used with the `refetchOnWindowFocus` option
-  focusManager.setFocused(nextAppState === 'active');
+  focusManager.setFocused(nextAppState === "active");
 });
 
 // Required reading when choosing options: https://react-query.tanstack.com/guides/important-defaults

@@ -3,8 +3,7 @@ import * as React from "react";
 
 import { CrossIcon } from "@src/shared/view/icons/Cross.icon";
 
-import { wrapAndRender } from "@src/testing/render";
-
+import { wrapAndRender } from "@src/shared/helpers/jest/render";
 import { Tag } from "./Tag.component";
 
 describe("Tag Component", () => {
@@ -34,7 +33,7 @@ describe("Tag Component", () => {
     const mockOnPress = jest.fn();
 
     wrapAndRender(
-      <Tag label="test" variant="disabled" onPress={mockOnPress} />
+      <Tag label="test" variant="disabled" onPress={mockOnPress} />,
     );
 
     fireEvent.press(screen.getByText("test"));

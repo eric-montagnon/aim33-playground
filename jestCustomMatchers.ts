@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import { toMatchSnapshot } from 'jest-snapshot';
-import { StyleSheet } from 'react-native';
+import { toMatchSnapshot } from "jest-snapshot";
+import { StyleSheet } from "react-native";
 import type {
   ReactTestRendererJSON,
   ReactTestRendererNode,
-} from 'react-test-renderer';
+} from "react-test-renderer";
 
 const getImageSource = (node: ReactTestRendererJSON): string | null => {
   let imageSource = node.props.source;
@@ -20,12 +20,12 @@ const getImageSource = (node: ReactTestRendererJSON): string | null => {
 
 export const toText = (
   node: ReactTestRendererNode | null,
-  textSeparator = '\n',
+  textSeparator = "\n",
 ): string | null => {
-  if (!node) return '';
-  if (typeof node === 'string') return node;
+  if (!node) return "";
+  if (typeof node === "string") return node;
   if (Array.isArray(node))
-    return toText({ type: 'Fragment', props: {}, children: node });
+    return toText({ type: "Fragment", props: {}, children: node });
 
   const texts = [
     getImageSource(node),
@@ -35,14 +35,14 @@ export const toText = (
   return texts.length > 0
     ? texts.join(textSeparator) +
         // Arbitrarily add a separator if more than 1 child, just to add some space in the snap
-        (texts.length > 1 ? textSeparator : '')
+        (texts.length > 1 ? textSeparator : "")
     : null;
 };
 
 const removeFunctionProps = (tree: ReactTestRendererJSON) => {
   const treeProps = { ...tree.props };
   Object.keys(treeProps).forEach((key) => {
-    if (typeof treeProps[key] === 'function') {
+    if (typeof treeProps[key] === "function") {
       delete treeProps[key];
     }
   });
@@ -60,7 +60,7 @@ const removeVirtualizedDataProps = (tree: ReactTestRendererJSON) => {
   return treeProps;
 };
 
-type Truthy<T> = T extends false | '' | 0 | null | undefined ? never : T;
+type Truthy<T> = T extends false | "" | 0 | null | undefined ? never : T;
 export const truthy = <T>(value: T): value is Truthy<T> => {
   return !!value;
 };
@@ -68,7 +68,7 @@ export const truthy = <T>(value: T): value is Truthy<T> => {
 const _smallSnapshot = (
   tree: ReactTestRendererNode | null,
 ): ReactTestRendererNode | null => {
-  if (!tree || typeof tree === 'string') return tree;
+  if (!tree || typeof tree === "string") return tree;
 
   const { children, props } = tree;
 

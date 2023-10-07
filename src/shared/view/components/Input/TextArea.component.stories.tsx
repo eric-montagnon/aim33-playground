@@ -1,12 +1,12 @@
-import React from "react";
 import { storiesOf } from "@storybook/react-native";
+import React from "react";
 import { Alert } from "react-native";
 
 import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 
+import { StoryPage } from "@src/shared/view/storybook/StoryPage/StoryPage.component";
+import { StorySection } from "@src/shared/view/storybook/StorySection/StorySection.component";
 import { TextArea } from "./TextArea.component";
-import { StoryPage } from "../../storybook/StoryPage/StoryPage.component";
-import { StorySection } from "../../storybook/StorySection/StorySection.component";
 
 const onTextChange = () => {
   Alert.alert("Your key works!");

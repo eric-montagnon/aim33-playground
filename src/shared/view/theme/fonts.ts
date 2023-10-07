@@ -1,29 +1,29 @@
 import {
-  ParagraphFontSize,
-  TitleFontSize,
   FontStyle,
+  ParagraphFontSize,
   ParagraphFontType,
-} from './fonts.types';
+  TitleFontSize,
+} from "./fonts.types";
 
 export const fontFiles = {
-  ['OpenSans-Bold']: require('./fonts/OpenSans-Bold.ttf'),
-  ['OpenSans-BoldItalic']: require('./fonts/OpenSans-BoldItalic.ttf'),
-  ['OpenSans-ExtraBold']: require('./fonts/OpenSans-ExtraBold.ttf'),
-  ['OpenSans-ExtraBoldItalic']: require('./fonts/OpenSans-ExtraBoldItalic.ttf'),
-  ['OpenSans-Italic']: require('./fonts/OpenSans-Italic.ttf'),
-  ['OpenSans-Light']: require('./fonts/OpenSans-Light.ttf'),
-  ['OpenSans-LightItalic']: require('./fonts/OpenSans-LightItalic.ttf'),
-  ['OpenSans-Medium']: require('./fonts/OpenSans-Medium.ttf'),
-  ['OpenSans-MediumItalic']: require('./fonts/OpenSans-MediumItalic.ttf'),
-  ['OpenSans-Regular']: require('./fonts/OpenSans-Regular.ttf'),
-  ['OpenSans-SemiBold']: require('./fonts/OpenSans-SemiBold.ttf'),
-  ['OpenSans-SemiBoldItalic']: require('./fonts/OpenSans-SemiBoldItalic.ttf'),
+  ["OpenSans-Bold"]: require("./fonts/OpenSans-Bold.ttf"),
+  ["OpenSans-BoldItalic"]: require("./fonts/OpenSans-BoldItalic.ttf"),
+  ["OpenSans-ExtraBold"]: require("./fonts/OpenSans-ExtraBold.ttf"),
+  ["OpenSans-ExtraBoldItalic"]: require("./fonts/OpenSans-ExtraBoldItalic.ttf"),
+  ["OpenSans-Italic"]: require("./fonts/OpenSans-Italic.ttf"),
+  ["OpenSans-Light"]: require("./fonts/OpenSans-Light.ttf"),
+  ["OpenSans-LightItalic"]: require("./fonts/OpenSans-LightItalic.ttf"),
+  ["OpenSans-Medium"]: require("./fonts/OpenSans-Medium.ttf"),
+  ["OpenSans-MediumItalic"]: require("./fonts/OpenSans-MediumItalic.ttf"),
+  ["OpenSans-Regular"]: require("./fonts/OpenSans-Regular.ttf"),
+  ["OpenSans-SemiBold"]: require("./fonts/OpenSans-SemiBold.ttf"),
+  ["OpenSans-SemiBoldItalic"]: require("./fonts/OpenSans-SemiBoldItalic.ttf"),
 } as const;
 
 const getTitleFont = (fontSize: number): FontStyle => ({
   fontSize,
   lineHeight: Math.round(fontSize * 1.3),
-  fontFamily: 'OpenSans-Bold',
+  fontFamily: "OpenSans-Bold",
 });
 
 const getParagraphFonts = (
@@ -33,15 +33,15 @@ const getParagraphFonts = (
   return {
     regular: {
       ...base,
-      fontFamily: 'OpenSans-Regular',
+      fontFamily: "OpenSans-Regular",
     },
     italic: {
       ...base,
-      fontFamily: 'OpenSans-Italic',
+      fontFamily: "OpenSans-Italic",
     },
     bold: {
       ...base,
-      fontFamily: 'OpenSans-Bold',
+      fontFamily: "OpenSans-Bold",
     },
   };
 };
@@ -69,4 +69,4 @@ export const paragraphFontSizes = Object.keys(
   fonts.paragraph,
 ) as ParagraphFontSize[];
 
-export const paragraphFontTypes = ['regular', 'italic', 'bold'] as const;
+export const paragraphFontTypes = ["regular", "italic", "bold"] as const;

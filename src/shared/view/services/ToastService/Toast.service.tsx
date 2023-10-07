@@ -1,16 +1,16 @@
-import React from 'react';
-import RNToast from 'react-native-toast-message';
+import React from "react";
+import RNToast from "react-native-toast-message";
 
-import { IToastService } from '@src/shared/view/services/ToastService/Toast.service.interface';
+import { IToastService } from "@src/shared/view/services/ToastService/Toast.service.interface";
 
-import { toastConfiguration } from './Toast.config';
+import { toastConfiguration } from "./Toast.config";
 
-const show: IToastService['show'] = ({
+const show: IToastService["show"] = ({
   title,
   body,
   type,
   duration = 3000,
-  position = 'top',
+  position = "top",
   onPress,
 }) => {
   RNToast.show({
@@ -29,7 +29,7 @@ const show: IToastService['show'] = ({
   };
 };
 
-const Toast: IToastService['Toast'] = () => (
+const Toast: IToastService["Toast"] = () => (
   <RNToast config={toastConfiguration} topOffset={0} />
 );
 

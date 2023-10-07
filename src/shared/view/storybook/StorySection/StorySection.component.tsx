@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from "react";
 
-import { Container } from './StorySection.styles';
-import { Typography } from '../../components/Typography/Typography.component';
+import { Typography } from "@src/shared/view/components/Typography/Typography.component";
+import { Container } from "./StorySection.styles";
 
 type Props = {
   title: string;

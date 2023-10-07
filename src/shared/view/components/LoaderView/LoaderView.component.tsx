@@ -1,8 +1,8 @@
-import { useTheme } from '@emotion/react';
-import React from 'react';
-import { ActivityIndicator } from 'react-native';
+import { useTheme } from "@emotion/react";
+import React from "react";
+import { ActivityIndicator } from "react-native";
 
-import { Container } from '@src/shared/view/components/LoaderView/LoaderView.styles';
+import { Container } from "@src/shared/view/components/LoaderView/LoaderView.styles";
 
 export const LoaderView = () => {
   const theme = useTheme();

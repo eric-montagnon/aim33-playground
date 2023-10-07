@@ -1,4 +1,4 @@
-import styled from '@emotion/native';
+import styled from "@emotion/native";
 
 export const InputContainer = styled.Pressable<{
   isDisabled: boolean;
@@ -17,8 +17,8 @@ export const InputContainer = styled.Pressable<{
     borderRadius: theme.spaces.s,
     paddingVertical: theme.spaces.s,
     paddingHorizontal: theme.spaces.m,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     height: theme.spaces.xxl,
   };
 });

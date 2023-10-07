@@ -1,10 +1,9 @@
 import { fireEvent, screen } from "@testing-library/react-native";
 import * as React from "react";
 
+import { wrapAndRender } from "@src/shared/helpers/jest/render";
 import { IconButton } from "@src/shared/view/components/IconButton/IconButton.component";
 import { CrossIcon } from "@src/shared/view/icons/Cross.icon";
-
-import { wrapAndRender } from "@src/testing/render";
 
 describe("Icon Button Component", () => {
   it("should render the icon", () => {
@@ -15,7 +14,7 @@ describe("Icon Button Component", () => {
         onPress={mockOnPress}
         Icon={CrossIcon}
         accessibilityLabel="opens alert on press"
-      />
+      />,
     );
 
     expect(screen.getByTestId("cross-icon")).toBeTruthy();
@@ -29,7 +28,7 @@ describe("Icon Button Component", () => {
         onPress={mockOnPress}
         Icon={CrossIcon}
         accessibilityLabel="opens alert on press"
-      />
+      />,
     );
 
     fireEvent.press(screen.getByTestId("cross-icon"));
@@ -47,7 +46,7 @@ describe("Icon Button Component", () => {
         Icon={CrossIcon}
         isDisabled
         accessibilityLabel="opens alert on press"
-      />
+      />,
     );
 
     fireEvent.press(screen.getByTestId("cross-icon"));

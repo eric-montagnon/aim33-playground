@@ -9,5 +9,5 @@ type pressableWithFeedbackStylesType = Record<
 
 export const pressableWithFeedbackStyles: pressableWithFeedbackStylesType = {
   default: (pressed: boolean) => ({ opacity: pressed ? 0.5 : 1 }),
-  disabled: (_: boolean) => ({ opacity: 1 }),
+  disabled: () => ({ opacity: 1 }),
 };

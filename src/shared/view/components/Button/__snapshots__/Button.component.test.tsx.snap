@@ -110,7 +110,7 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -325,7 +325,7 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -528,7 +528,7 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -743,7 +743,7 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -946,7 +946,7 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -1161,7 +1161,7 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -1364,7 +1364,7 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -1579,7 +1579,7 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -1782,7 +1782,7 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -1997,7 +1997,7 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -2200,7 +2200,7 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >
@@ -2415,7 +2415,7 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
             "flex": 1,
             "flexDirection": "row",
             "padding": 16,
-            "paddingTop": 63,
+            "paddingTop": 16,
           }
         }
       >

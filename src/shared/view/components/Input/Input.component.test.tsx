@@ -1,23 +1,22 @@
-import { fireEvent, screen } from '@testing-library/react-native';
-import * as React from 'react';
+import { fireEvent, screen } from "@testing-library/react-native";
+import * as React from "react";
 
-import { wrapAndRender } from '@src/testing/render';
+import { wrapAndRender } from "@src/shared/helpers/jest/render";
+import { Input } from "./Input.component";
 
-import { Input } from './Input.component';
-
-describe('Input Component', () => {
-  it('should render the label and placeholder', () => {
+describe("Input Component", () => {
+  it("should render the label and placeholder", () => {
     wrapAndRender(<Input label="mock label" placeholder="mock placeholder" />);
 
-    expect(screen.getByText('mock label')).toBeTruthy();
-    expect(screen.getByPlaceholderText('mock placeholder')).toBeTruthy();
+    expect(screen.getByText("mock label")).toBeTruthy();
+    expect(screen.getByPlaceholderText("mock placeholder")).toBeTruthy();
   });
 
   it(`should not render an error icon
     when there's no errorLabel`, () => {
     wrapAndRender(<Input label="mock label" placeholder="mock placeholder" />);
 
-    expect(screen.queryByTestId('error-icon')).toBeFalsy();
+    expect(screen.queryByTestId("error-icon")).toBeFalsy();
   });
 
   it(`should render the error label and error Icon
@@ -30,8 +29,8 @@ describe('Input Component', () => {
       />,
     );
 
-    expect(screen.getByText('mock error label')).toBeTruthy();
-    expect(screen.getByTestId('error-icon')).toBeTruthy();
+    expect(screen.getByText("mock error label")).toBeTruthy();
+    expect(screen.getByTestId("error-icon")).toBeTruthy();
   });
 
   it(`should call onChangeText 
@@ -46,9 +45,9 @@ describe('Input Component', () => {
       />,
     );
 
-    fireEvent.changeText(screen.getByPlaceholderText('mock placeholder'), 'ab');
+    fireEvent.changeText(screen.getByPlaceholderText("mock placeholder"), "ab");
 
-    expect(mockOnChange).toHaveBeenCalledWith('ab');
+    expect(mockOnChange).toHaveBeenCalledWith("ab");
   });
 
   it(`should be disabled when isDisabled is true`, () => {
@@ -60,6 +59,6 @@ describe('Input Component', () => {
       />,
     );
 
-    expect(screen.getByPlaceholderText('mock placeholder')).toBeDisabled();
+    expect(screen.getByPlaceholderText("mock placeholder")).toBeDisabled();
   });
 });

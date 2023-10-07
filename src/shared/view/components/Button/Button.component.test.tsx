@@ -1,10 +1,9 @@
-import { fireEvent, screen } from '@testing-library/react-native';
-import * as React from 'react';
+import { fireEvent, screen } from "@testing-library/react-native";
+import * as React from "react";
 
-import { wrapAndRender } from '@src/testing/render';
-
-import { CrossIcon } from '../../icons/Cross.icon';
-import { Button } from './Button.component';
+import { wrapAndRender } from "@src/shared/helpers/jest/render";
+import { CrossIcon } from "@src/shared/view/icons/Cross.icon";
+import { Button } from "./Button.component";
 
 const isLoading = [true, false];
 const isDisabled = [true, false];
@@ -16,18 +15,18 @@ const differentTestCases = isLoading.flatMap((loadingElement) =>
   })),
 );
 
-describe('Button Component', () => {
-  it('should render the label', () => {
+describe("Button Component", () => {
+  it("should render the label", () => {
     const mockOnPress = jest.fn();
 
     wrapAndRender(
       <Button.Primary label="Button primary" onPress={mockOnPress} />,
     );
 
-    expect(screen.getByText('Button primary')).toBeTruthy();
+    expect(screen.getByText("Button primary")).toBeTruthy();
   });
 
-  it('should render the icon', () => {
+  it("should render the icon", () => {
     const mockOnPress = jest.fn();
 
     wrapAndRender(
@@ -38,15 +37,15 @@ describe('Button Component', () => {
       />,
     );
 
-    expect(screen.getByTestId('cross-icon')).toBeTruthy();
+    expect(screen.getByTestId("cross-icon")).toBeTruthy();
   });
 
-  it('should call the onPress', () => {
+  it("should call the onPress", () => {
     const mockOnPress = jest.fn();
 
     wrapAndRender(<Button.Primary label="test" onPress={mockOnPress} />);
 
-    fireEvent.press(screen.getByText('test'));
+    fireEvent.press(screen.getByText("test"));
 
     expect(mockOnPress).toHaveBeenCalledTimes(1);
   });
@@ -58,13 +57,13 @@ describe('Button Component', () => {
       <Button.Primary label="test" onPress={mockOnPress} isDisabled={true} />,
     );
 
-    fireEvent.press(screen.getByText('test'));
+    fireEvent.press(screen.getByText("test"));
 
     expect(mockOnPress).toHaveBeenCalledTimes(0);
   });
 
   it.each(differentTestCases)(
-    'renders Primary Button with props %p',
+    "renders Primary Button with props %p",
     (props) => {
       wrapAndRender(
         <Button.Primary
@@ -78,7 +77,7 @@ describe('Button Component', () => {
   );
 
   it.each(differentTestCases)(
-    'renders Secondary Button with props %p',
+    "renders Secondary Button with props %p",
     (props) => {
       wrapAndRender(
         <Button.Secondary
@@ -92,7 +91,7 @@ describe('Button Component', () => {
   );
 
   it.each(differentTestCases)(
-    'renders Tertiary Button with props %p',
+    "renders Tertiary Button with props %p",
     (props) => {
       wrapAndRender(
         <Button.Tertiary

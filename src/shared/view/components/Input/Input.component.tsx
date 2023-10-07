@@ -2,8 +2,8 @@ import { useTheme } from "@emotion/react";
 import React, { forwardRef, useState } from "react";
 import { Platform, TextInput, TextInputProps, View } from "react-native";
 
-import { ErrorIcon } from "@src/shared/view/icons/Error.icon";
 import { Typography } from "@src/shared/view/components/Typography/Typography.component";
+import { ErrorIcon } from "@src/shared/view/icons/Error.icon";
 
 import { InputBox, Label } from "./Input.styles";
 import { InputContainer } from "./common.style";
@@ -31,7 +31,7 @@ export const Input = forwardRef<TextInput, InputProps>(
       rightIcon,
       ...textInputProps
     }: InputProps,
-    ref
+    ref,
   ) => {
     const [isFocused, setIsFocused] = useState(false);
     const theme = useTheme();
@@ -94,7 +94,7 @@ export const Input = forwardRef<TextInput, InputProps>(
         ) : null}
       </View>
     );
-  }
+  },
 );
 
 Input.displayName = "Input";

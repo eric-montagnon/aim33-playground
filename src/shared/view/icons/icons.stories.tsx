@@ -3,26 +3,25 @@ import { storiesOf } from "@storybook/react-native";
 import React from "react";
 import { View } from "react-native";
 
-import { theme } from "@src/shared/view/theme/theme";
-import { LeftArrowIcon } from "@src/shared/view/icons/LeftArrow.icon";
-import { EyeIcon } from "@src/shared/view/icons/Eye.icon";
+import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
+import { Typography } from "@src/shared/view/components/Typography/Typography.component";
 import { CheckedBoxIcon } from "@src/shared/view/icons/CheckedBox.icon";
 import { CheckedRadioButtonIcon } from "@src/shared/view/icons/CheckedRadioButton.icon";
 import { CrossIcon } from "@src/shared/view/icons/Cross.icon";
 import { DisabledRadioButtonIcon } from "@src/shared/view/icons/DisabledRadioButton.icon";
-import { IconType } from "@src/shared/view/icons/Icon.types";
 import { ErrorIcon } from "@src/shared/view/icons/Error.icon";
+import { EyeIcon } from "@src/shared/view/icons/Eye.icon";
+import { EyeClosedIcon } from "@src/shared/view/icons/EyeClosed.icon";
+import { IconType } from "@src/shared/view/icons/Icon.types";
 import { InfoIcon } from "@src/shared/view/icons/Info.icon";
+import { LeftArrowIcon } from "@src/shared/view/icons/LeftArrow.icon";
 import { SuccessIcon } from "@src/shared/view/icons/Success.icon";
 import { UncheckedBoxIcon } from "@src/shared/view/icons/UnCheckedBox.icon";
 import { UncheckedRadioButtonIcon } from "@src/shared/view/icons/UncheckedRadioButton.icon";
 import { WarningIcon } from "@src/shared/view/icons/Warning.icon";
-import { EyeClosedIcon } from "@src/shared/view/icons/EyeClosed.icon";
-
-import { Typography } from "../components/Typography/Typography.component";
-import { Spacer } from "../components/Spacer/Spacer.component";
-import { StorySection } from "../storybook/StorySection/StorySection.component";
-import { StoryPage } from "../storybook/StoryPage/StoryPage.component";
+import { StoryPage } from "@src/shared/view/storybook/StoryPage/StoryPage.component";
+import { StorySection } from "@src/shared/view/storybook/StorySection/StorySection.component";
+import { theme } from "@src/shared/view/theme/theme";
 
 const icons: IconType[] = [
   CheckedBoxIcon,

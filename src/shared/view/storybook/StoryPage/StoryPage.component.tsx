@@ -1,15 +1,14 @@
-import { useTheme } from '@emotion/react';
-import React from 'react';
-import { ReactNode } from 'react';
+import { useTheme } from "@emotion/react";
+import React, { ReactNode } from "react";
 
-import * as S from './StoryPage.styles';
+import * as S from "./StoryPage.styles";
 
 type Props = {
-  background?: 'grey' | 'default';
+  background?: "grey" | "default";
   children: ReactNode;
 };
 
-export const StoryPage = ({ children, background = 'default' }: Props) => {
+export const StoryPage = ({ children, background = "default" }: Props) => {
   const theme = useTheme();
   return (
     <S.Container

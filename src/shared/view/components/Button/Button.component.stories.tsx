@@ -1,13 +1,13 @@
-import React from "react";
 import { storiesOf } from "@storybook/react-native";
+import React from "react";
 import { Alert } from "react-native";
 
+import { CrossIcon } from "@src/shared/view/icons/Cross.icon";
 import { StoryPage } from "@src/shared/view/storybook/StoryPage/StoryPage.component";
 import { StorySection } from "@src/shared/view/storybook/StorySection/StorySection.component";
-import { CrossIcon } from "@src/shared/view/icons/Cross.icon";
 
+import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 import { Button } from "./Button.component";
-import { Spacer } from "../Spacer/Spacer.component";
 
 const SPACE_BETWEEN_BUTTONS = 10;
 

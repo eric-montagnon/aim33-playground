@@ -1,4 +1,4 @@
-import { StackScreenProps } from '@react-navigation/stack';
+import { StackScreenProps } from "@react-navigation/stack";
 
 export type NavigatorStackParamList = {
   Welcome: undefined;
@@ -7,14 +7,9 @@ export type NavigatorStackParamList = {
 
 export type WelcomeScreenProps = StackScreenProps<
   NavigatorStackParamList,
-  'Welcome'
+  "Welcome"
 >;
 
-export type ByeScreenProps = StackScreenProps<
-  NavigatorStackParamList,
-  'Bye'
->;
+export type ByeScreenProps = StackScreenProps<NavigatorStackParamList, "Bye">;
 
-export type NavigatorScreens =
-  | 'Welcome'
-  | 'Bye'
+export type NavigatorScreens = "Welcome" | "Bye";

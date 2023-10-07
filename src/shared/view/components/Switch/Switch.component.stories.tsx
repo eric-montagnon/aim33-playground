@@ -1,16 +1,15 @@
-import React, { useState } from "react";
-import { storiesOf } from "@storybook/react-native";
-import { Text, View } from "react-native";
 import styled from "@emotion/native";
+import { storiesOf } from "@storybook/react-native";
+import React, { useState } from "react";
+import { Text, View } from "react-native";
 
+import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
+import { Switch } from "@src/shared/view/components/Switch/Switch.component";
+import { SwitchStyle } from "@src/shared/view/components/Switch/Switch.styles";
+import { Typography } from "@src/shared/view/components/Typography/Typography.component";
 import { StoryPage } from "@src/shared/view/storybook/StoryPage/StoryPage.component";
 import { StorySection } from "@src/shared/view/storybook/StorySection/StorySection.component";
-import { Switch } from "@src/shared/view/components/Switch/Switch.component";
-import { Typography } from "@src/shared/view/components/Typography/Typography.component";
-import { SwitchStyle } from "@src/shared/view/components/Switch/Switch.styles";
 import { theme } from "@src/shared/view/theme/theme";
-
-import { Spacer } from "../Spacer/Spacer.component";
 
 const SPACE_BETWEEN_SWITCHES = 30;
 

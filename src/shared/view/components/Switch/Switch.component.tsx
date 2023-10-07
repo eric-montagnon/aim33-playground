@@ -15,8 +15,8 @@ import {
   AnimatedPressable,
   Background,
   disabledStyle,
-  IconCircle,
   ICON_TO_BORDER_SPACING,
+  IconCircle,
   SwitchStyle,
 } from "@src/shared/view/components/Switch/Switch.styles";
 
@@ -53,7 +53,7 @@ const ToggleComponent: React.FC<Props> = ({
     const borderColor = interpolateColor(
       transitionProgress.value,
       [0, 1],
-      [onBorderColor, offBorderColor]
+      [onBorderColor, offBorderColor],
     );
     const borderWidth = 1;
     return { borderColor, borderWidth };
@@ -67,7 +67,7 @@ const ToggleComponent: React.FC<Props> = ({
     const backgroundColor = interpolateColor(
       transitionProgress.value,
       [0, 1],
-      [onBackgroundColor, offBackgroundColor]
+      [onBackgroundColor, offBackgroundColor],
     );
     return { backgroundColor };
   });
@@ -76,7 +76,7 @@ const ToggleComponent: React.FC<Props> = ({
     const backgroundColor = interpolateColor(
       transitionProgress.value,
       [0, 1],
-      [theme.colors.textNormal, theme.colors.white]
+      [theme.colors.textNormal, theme.colors.white],
     );
     return { backgroundColor };
   });
@@ -85,7 +85,7 @@ const ToggleComponent: React.FC<Props> = ({
     const color = interpolateColor(
       transitionProgress.value,
       [0, 1],
-      [theme.colors.textNormal, theme.colors.white]
+      [theme.colors.textNormal, theme.colors.white],
     );
     return { color };
   });

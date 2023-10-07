@@ -1,7 +1,6 @@
-import React, { ReactElement } from 'react';
-
-import { Container } from './StorySubSection.styles';
-import { Typography } from '../../components/Typography/Typography.component';
+import { Typography } from "@src/shared/view/components/Typography/Typography.component";
+import React, { ReactElement } from "react";
+import { Container } from "./StorySubSection.styles";
 
 type Props = {
   title: string;
@@ -10,7 +9,7 @@ type Props = {
 export const StorySubSection = ({ title }: Props): ReactElement => {
   return (
     <Container>
-      <Typography.Title size={'l'}>{title}</Typography.Title>
+      <Typography.Title size={"l"}>{title}</Typography.Title>
     </Container>
   );
 };

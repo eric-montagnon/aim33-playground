@@ -1,16 +1,15 @@
 import { useTheme } from "@emotion/react";
 import React, { useState } from "react";
-import { Platform } from "react-native";
-import { View } from "react-native";
+import { Platform, View } from "react-native";
 
 import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 
-import { ErrorIcon } from "../../icons/Error.icon";
+import { ErrorIcon } from "@src/shared/view/icons/Error.icon";
 import {
-  TextAreaContainer,
-  TextAreaBox,
-  TopRow,
   BottomRow,
+  TextAreaBox,
+  TextAreaContainer,
+  TopRow,
 } from "./TextArea.styles";
 
 type TextAreaProps = {

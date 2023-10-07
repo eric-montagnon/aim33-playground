@@ -1,6 +1,6 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { ILocalStorage } from './LocalStorage.service.interface';
+import { ILocalStorage } from "./LocalStorage.service.interface";
 
 const getStringItem = async (key: string): Promise<string | null> => {
   return await AsyncStorage.getItem(key);
