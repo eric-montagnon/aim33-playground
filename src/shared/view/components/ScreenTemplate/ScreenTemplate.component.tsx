@@ -5,6 +5,7 @@ import { CustomScrollView } from "@src/shared/view/components/CustomScrollView/C
 import { QueryBoundaries } from "@src/shared/view/components/QueryBoundaries/QueryBoundaries.component";
 import { ScreenContainer } from "@src/shared/view/components/ScreenTemplate/ScreenTemplate.styles";
 
+import styled from "@emotion/native";
 import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 
 type Props = {
@@ -19,10 +20,14 @@ export const ScreenTemplate = ({ header, children }: Props) => {
       {header ?? <Spacer vertical={top} />}
       <QueryBoundaries>
         <CustomScrollView>
-          {children}
+          <Container>{children}</Container>
           <Spacer vertical={bottom} />
         </CustomScrollView>
       </QueryBoundaries>
     </ScreenContainer>
   );
 };
+
+const Container = styled.View(({ theme }) => ({
+  padding: theme.spaces.l,
+}));
