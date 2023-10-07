@@ -9,7 +9,7 @@ export const colors = {
   grey100: "#E5E5E5",
   grey200: "#CCCCCC",
   grey300: "#737373",
-  white: "#F0EEE5",
+  white: "#FFFFFF",
   black: "#000000",
   textNormal: "#000000",
   textPlaceholder: "#737373",

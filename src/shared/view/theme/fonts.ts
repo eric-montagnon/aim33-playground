@@ -57,8 +57,8 @@ export const fonts = {
     xxxl: getTitleFont(46),
   },
   paragraph: {
-    p1: getParagraphFonts(16),
-    p2: getParagraphFonts(14),
+    p1: getParagraphFonts(20),
+    p2: getParagraphFonts(16),
     p3: getParagraphFonts(12),
   },
 } as const;

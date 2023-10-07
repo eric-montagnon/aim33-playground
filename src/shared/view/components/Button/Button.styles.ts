@@ -1,7 +1,7 @@
 import { ViewStyle } from "react-native";
 
-import { colors } from "@src/shared/view/theme/colors";
 import { ButtonTypographyProps } from "@src/shared/view/components/Button/ButtonTypography.component";
+import { colors } from "@src/shared/view/theme/colors";
 
 type ButtonState = "rest" | "disabled" | "active";
 
@@ -21,6 +21,10 @@ const defaultContainerStyle: ViewStyle = {
   alignItems: "center",
   flexDirection: "row",
   justifyContent: "center",
+  shadowColor: "black",
+  shadowOffset: { height: 2, width: 0 },
+  shadowOpacity: 0.3,
+  shadowRadius: 2,
 };
 
 const defaultTextStyle: ButtonTypographyProps["style"] = {
@@ -66,7 +70,7 @@ export const secondaryButtonStyle: BaseButtonStyle = {
   rest: {
     container: {
       ...defaultContainerStyle,
-      backgroundColor: "transparent",
+      backgroundColor: colors.white,
       borderColor: colors.primary500,
     },
     text: {
@@ -103,6 +107,7 @@ export const tertiaryButtonStyle: BaseButtonStyle = {
   rest: {
     container: {
       ...defaultContainerStyle,
+      shadowOpacity: 0,
       backgroundColor: "transparent",
       borderColor: "transparent",
     },

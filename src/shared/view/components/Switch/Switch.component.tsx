@@ -76,7 +76,7 @@ const ToggleComponent: React.FC<Props> = ({
     const backgroundColor = interpolateColor(
       transitionProgress.value,
       [0, 1],
-      [theme.colors.textNormal, theme.colors.white],
+      [theme.colors.white, theme.colors.white],
     );
     return { backgroundColor };
   });
