@@ -11,7 +11,6 @@ import {
 import { Loader } from "@src/shared/view/components/Loader/Loader.component";
 import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 import {
-  AnimatedLabel,
   AnimatedPressable,
   Background,
   disabledStyle,
@@ -34,7 +33,6 @@ const ANIMATION_DURATION = 300;
 
 const ToggleComponent: React.FC<Props> = ({
   isDisabled = false,
-  labels,
   isChecked,
   isLoading,
   style,
@@ -81,15 +79,6 @@ const ToggleComponent: React.FC<Props> = ({
     return { backgroundColor };
   });
 
-  const textStyle = useAnimatedStyle(() => {
-    const color = interpolateColor(
-      transitionProgress.value,
-      [0, 1],
-      [theme.colors.textNormal, theme.colors.white],
-    );
-    return { color };
-  });
-
   const loaderColor = theme.colors.white;
 
   return (
@@ -111,13 +100,6 @@ const ToggleComponent: React.FC<Props> = ({
           ]}
         >
           <Spacer horizontal={10} />
-          <AnimatedLabel
-            style={textStyle}
-            layout={Layout.duration(ANIMATION_DURATION)}
-            allowFontScaling={false}
-          >
-            {isChecked ? labels?.on : labels?.off}
-          </AnimatedLabel>
           <Spacer flex={1} />
           <IconCircle
             layout={Layout.duration(ANIMATION_DURATION)}

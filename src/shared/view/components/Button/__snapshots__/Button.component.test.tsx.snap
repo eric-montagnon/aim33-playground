@@ -36,7 +36,7 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
     style={
       {
         "alignItems": "center",
-        "backgroundColor": "#FF7E1D",
+        "backgroundColor": "#574BAA",
         "borderColor": "transparent",
         "borderRadius": 40,
         "borderWidth": 1,
@@ -44,6 +44,13 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -64,8 +71,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
           {
             "color": "#FFFFFF",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -177,8 +184,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -190,8 +197,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -239,7 +246,7 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
     style={
       {
         "alignItems": "center",
-        "backgroundColor": "#FF7E1D",
+        "backgroundColor": "#574BAA",
         "borderColor": "transparent",
         "borderRadius": 40,
         "borderWidth": 1,
@@ -247,6 +254,13 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -267,8 +281,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
           {
             "color": "#FFFFFF",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -392,8 +406,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -405,8 +419,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": false
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -462,6 +476,13 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -482,8 +503,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
           {
             "color": "#737373",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -595,8 +616,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -608,8 +629,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -665,6 +686,13 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -685,8 +713,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
           {
             "color": "#737373",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -810,8 +838,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -823,8 +851,8 @@ exports[`Button Component renders Primary Button with props {"isDisabled": true,
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -872,14 +900,21 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
     style={
       {
         "alignItems": "center",
-        "backgroundColor": "transparent",
-        "borderColor": "#FF7E1D",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#574BAA",
         "borderRadius": 40,
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -898,10 +933,10 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
         numberOfLines={0}
         style={
           {
-            "color": "#FF7E1D",
+            "color": "#574BAA",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -1013,8 +1048,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -1026,8 +1061,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -1075,14 +1110,21 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
     style={
       {
         "alignItems": "center",
-        "backgroundColor": "transparent",
-        "borderColor": "#FF7E1D",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#574BAA",
         "borderRadius": 40,
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -1101,10 +1143,10 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
         numberOfLines={0}
         style={
           {
-            "color": "#FF7E1D",
+            "color": "#574BAA",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -1120,7 +1162,7 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
       }
     >
       <ActivityIndicator
-        color="#FF7E1D"
+        color="#574BAA"
         testID="activity-indicator"
       />
     </View>
@@ -1228,8 +1270,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -1241,8 +1283,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": fal
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -1298,6 +1340,13 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -1318,8 +1367,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
           {
             "color": "#737373",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -1431,8 +1480,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -1444,8 +1493,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -1501,6 +1550,13 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -1521,8 +1577,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
           {
             "color": "#737373",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "none",
           }
         }
@@ -1646,8 +1702,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -1659,8 +1715,8 @@ exports[`Button Component renders Secondary Button with props {"isDisabled": tru
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -1716,6 +1772,13 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0,
+        "shadowRadius": 2,
       }
     }
   >
@@ -1734,10 +1797,10 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
         numberOfLines={0}
         style={
           {
-            "color": "#FF7E1D",
+            "color": "#574BAA",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "underline",
           }
         }
@@ -1849,8 +1912,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -1862,8 +1925,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -1919,6 +1982,13 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0,
+        "shadowRadius": 2,
       }
     }
   >
@@ -1937,10 +2007,10 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
         numberOfLines={0}
         style={
           {
-            "color": "#FF7E1D",
+            "color": "#574BAA",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "underline",
           }
         }
@@ -1956,7 +2026,7 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
       }
     >
       <ActivityIndicator
-        color="#FF7E1D"
+        color="#574BAA"
         testID="activity-indicator"
       />
     </View>
@@ -2064,8 +2134,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -2077,8 +2147,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": fals
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -2134,6 +2204,13 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -2154,8 +2231,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
           {
             "color": "#737373",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "underline",
           }
         }
@@ -2267,8 +2344,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -2280,8 +2357,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }
@@ -2337,6 +2414,13 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
         "justifyContent": "center",
         "paddingHorizontal": 16,
         "paddingVertical": 8,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 2,
       }
     }
   >
@@ -2357,8 +2441,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
           {
             "color": "#737373",
             "fontFamily": "OpenSans-Bold",
-            "fontSize": 16,
-            "lineHeight": 24,
+            "fontSize": 20,
+            "lineHeight": 30,
             "textDecorationLine": "underline",
           }
         }
@@ -2482,8 +2566,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Bold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 20,
+                "lineHeight": 30,
                 "textDecorationLine": "none",
               }
             }
@@ -2495,8 +2579,8 @@ exports[`Button Component renders Tertiary Button with props {"isDisabled": true
               {
                 "color": "#000000",
                 "fontFamily": "OpenSans-Regular",
-                "fontSize": 14,
-                "lineHeight": 21,
+                "fontSize": 16,
+                "lineHeight": 24,
                 "textDecorationLine": "none",
               }
             }

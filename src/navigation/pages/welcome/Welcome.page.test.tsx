@@ -1,4 +1,4 @@
-import { screen } from "@testing-library/react-native";
+import { fireEvent, screen, waitFor } from "@testing-library/react-native";
 import * as React from "react";
 
 import { WelcomeScreenProps } from "@src/navigation/Navigator.interface";
@@ -12,11 +12,18 @@ const welcomeTestProps = {
   },
 } as unknown as WelcomeScreenProps;
 
-describe("Sign up Page", () => {
+describe("Welcome Page", () => {
   it("displays properly", () => {
     wrapAndRender(<WelcomePage {...welcomeTestProps} />);
 
-    expect(screen.getByText("Welcome")).toBeTruthy();
+    expect(screen.getByText("Welcome to aim33 playground")).toBeTruthy();
     expect(screen).toMatchComponentSnapshot();
+  });
+  it("navigates to search when clicking on Dive In", async () => {
+    wrapAndRender(<WelcomePage {...welcomeTestProps} />);
+
+    fireEvent.press(screen.getByText("Dive In"));
+
+    await waitFor(() => expect(navigateMock).toHaveBeenCalledWith("Search"));
   });
 });

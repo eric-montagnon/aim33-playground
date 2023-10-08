@@ -1,7 +1,6 @@
 import styled from "@emotion/native";
 import Animated from "react-native-reanimated";
 
-import { Typography } from "@src/shared/view/components/Typography/Typography.component";
 import { ThemeColor } from "@src/shared/view/theme/colors.types";
 
 const ICON_SIZE = 31;
@@ -44,11 +43,3 @@ export const IconCircle = styled(Animated.View)(() => ({
   alignItems: "center",
   justifyContent: "center",
 }));
-
-const StyledLabel = styled(Typography.P3)({
-  textTransform: "uppercase",
-});
-
-//Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef?%s%s
-//Error is caused because Typography.P3 from 'StyledLabel' is a function and we want a class when calling in 'createAnimatedComponent()'
-export const AnimatedLabel = Animated.createAnimatedComponent(StyledLabel);
