@@ -1,6 +1,7 @@
 import styled from "@emotion/native";
 import { Drink } from "@src/modules/drinks/Drink.type";
 import { DrinkRowCard } from "@src/modules/drinks/DrinkRowCard";
+import { getDrinksByName } from "@src/modules/drinks/getDrinksByName";
 import { SearchScreenProps } from "@src/navigation/Navigator.interface";
 import { IconButton } from "@src/shared/view/components/IconButton/IconButton.component";
 import { ScreenTemplate } from "@src/shared/view/components/ScreenTemplate/ScreenTemplate.component";
@@ -11,31 +12,13 @@ import { ActivityIndicator, StatusBar, View } from "react-native";
 
 import { Searchbar } from "react-native-paper";
 
-async function getDrinks(
-  text: string,
-  setData: React.Dispatch<React.SetStateAction<Drink[]>>,
-  setLoading: React.Dispatch<React.SetStateAction<boolean>>,
-) {
-  try {
-    const response = await fetch(
-      "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + text,
-    );
-    const json = await response.json();
-    setData(json.drinks);
-  } catch (error) {
-    console.error(error);
-  } finally {
-    setLoading(false);
-  }
-}
-
 export const SearchPage = ({ navigation }: SearchScreenProps) => {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState<Drink[]>([]);
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    getDrinks("punch", setData, setLoading);
+    getDrinksByName("punch", setData, setLoading);
   }, []);
 
   return (
@@ -49,7 +32,7 @@ export const SearchPage = ({ navigation }: SearchScreenProps) => {
         placeholder="Search"
         onChangeText={(text) => {
           setInput(text);
-          getDrinks(text, setData, setLoading);
+          getDrinksByName(text, setData, setLoading);
         }}
         value={input}
       />
