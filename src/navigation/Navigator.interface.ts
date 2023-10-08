@@ -1,8 +1,12 @@
 import { StackScreenProps } from "@react-navigation/stack";
+import { Drink } from "@src/modules/drinks/Drink.type";
 
 export type NavigatorStackParamList = {
   Welcome: undefined;
-  Bye: undefined;
+  Search: undefined;
+  Details: {
+    drink: Drink;
+  };
 };
 
 export type WelcomeScreenProps = StackScreenProps<
@@ -10,6 +14,14 @@ export type WelcomeScreenProps = StackScreenProps<
   "Welcome"
 >;
 
-export type ByeScreenProps = StackScreenProps<NavigatorStackParamList, "Bye">;
+export type SearchScreenProps = StackScreenProps<
+  NavigatorStackParamList,
+  "Search"
+>;
 
-export type NavigatorScreens = "Welcome" | "Bye";
+export type DetailsScreenProps = StackScreenProps<
+  NavigatorStackParamList,
+  "Details"
+>;
+
+export type NavigatorScreens = "Welcome" | "Search" | "Details";

@@ -70,14 +70,14 @@ export const WelcomePage = ({ navigation }: WelcomeScreenProps) => {
       <Spacer vertical={35} />
       <Description>
         <Typography.P2>
-          We are now ready to start, let's dive in.{" "}
+          We are now ready to start, let&apos;s dive in.{" "}
         </Typography.P2>
       </Description>
       <Spacer vertical={20} />
       <Button.Primary
         label="Dive In"
         onPress={() => {
-          navigation.navigate("Bye");
+          navigation.navigate("Search");
         }}
       />
     </ScreenTemplate>
