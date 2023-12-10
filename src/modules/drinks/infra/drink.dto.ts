@@ -1,4 +1,4 @@
-export type Drink = {
+export type DrinkDTO = {
   idDrink: number;
   strDrink: string;
   strDrinkThumb: string;

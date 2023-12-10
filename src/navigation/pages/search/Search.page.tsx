@@ -1,26 +1,21 @@
 import styled from "@emotion/native";
-import { Drink } from "@src/modules/drinks/Drink.type";
-import { DrinkRowCard } from "@src/modules/drinks/DrinkRowCard";
-import { getDrinksByName } from "@src/modules/drinks/getDrinksByName";
+import { DrinkRowCard } from "@src/modules/drinks/view/components/DrinkRowCard";
+import { useGetDrinks } from "@src/modules/drinks/view/useGetDrinks";
 import { SearchScreenProps } from "@src/navigation/Navigator.interface";
 import { IconButton } from "@src/shared/view/components/IconButton/IconButton.component";
 import { ScreenTemplate } from "@src/shared/view/components/ScreenTemplate/ScreenTemplate.component";
 import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 import { LeftArrowIcon } from "@src/shared/view/icons/LeftArrow.icon";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ActivityIndicator, StatusBar, View } from "react-native";
 
 import { Searchbar } from "react-native-paper";
 
 export const SearchPage = ({ navigation }: SearchScreenProps) => {
-  const [isLoading, setLoading] = useState(true);
-  const [data, setData] = useState<Drink[]>([]);
-  const [input, setInput] = useState("");
-
-  useEffect(() => {
-    getDrinksByName("punch", setData, setLoading);
-  }, []);
-
+  const [input, setInput] = useState("punch");
+  const { data: data2, isLoading: isLoading2 } = useGetDrinks({
+    drinkName: input,
+  });
   return (
     <ScreenTemplate>
       <Searchbar
@@ -32,21 +27,24 @@ export const SearchPage = ({ navigation }: SearchScreenProps) => {
         placeholder="Search"
         onChangeText={(text) => {
           setInput(text);
-          getDrinksByName(text, setData, setLoading);
         }}
         value={input}
       />
       <StatusBar />
       <DrinksList>
-        {isLoading ? (
-          <ActivityIndicator testID="loader" />
+        {isLoading2 ? (
+          <View>
+            <Spacer vertical={10} />
+            <ActivityIndicator testID="loader" />
+            <Spacer vertical={10} />
+          </View>
         ) : (
           <>
             <Spacer vertical={10} />
-            {data
-              ? data.map((drink) => {
+            {data2
+              ? data2.map((drink) => {
                   return (
-                    <View key={`${drink.idDrink}-${drink.strDrink}`}>
+                    <View key={`${drink.id}-${drink.name}`}>
                       <DrinkRowCard
                         drink={drink}
                         onPress={() => {

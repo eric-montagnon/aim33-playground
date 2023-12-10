@@ -1,7 +1,7 @@
 import { screen, waitFor } from "@testing-library/react-native";
 import * as React from "react";
 
-import { drinksListMock } from "@src/modules/drinks/drink.mock";
+import { drinksListMock } from "@src/modules/drinks/infra/drink.mock";
 import { SearchScreenProps } from "@src/navigation/Navigator.interface";
 import { SearchPage } from "@src/navigation/pages/search/Search.page";
 import { wrapAndRender } from "@src/shared/helpers/jest/render";

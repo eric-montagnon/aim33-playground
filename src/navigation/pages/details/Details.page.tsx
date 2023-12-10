@@ -8,45 +8,35 @@ import React from "react";
 
 export const DetailsPage = ({ navigation, route }: DetailsScreenProps) => {
   const drink = route.params?.drink;
-  const ingredients = [
-    { type: drink.strIngredient1, quantity: drink.strMeasure1 },
-    { type: drink.strIngredient2, quantity: drink.strMeasure2 },
-    { type: drink.strIngredient3, quantity: drink.strMeasure3 },
-    { type: drink.strIngredient4, quantity: drink.strMeasure4 },
-    { type: drink.strIngredient5, quantity: drink.strMeasure5 },
-    { type: drink.strIngredient6, quantity: drink.strMeasure6 },
-    { type: drink.strIngredient7, quantity: drink.strMeasure7 },
-    { type: drink.strIngredient8, quantity: drink.strMeasure8 },
-  ];
 
   return (
     <ScreenTemplate>
       <Container>
         <DrinkImage
           source={{
-            uri: drink.strDrinkThumb,
+            uri: drink.thumb,
           }}
         />
         <Spacer vertical={20} />
         <Description>
           <Typography.P1 type="bold" color="#FFFFFF">
-            {drink.strDrink}
+            {drink.name}
           </Typography.P1>
           <Spacer vertical={20} />
-          {ingredients.map((ingredient, index) => {
-            return ingredient.type ? (
+          {drink.ingredients.map((ingredient, index) => {
+            return ingredient.name ? (
               <Typography.P2
                 type="bold"
                 color="#FFFFFF"
-                key={`${ingredient.type} ${index}`}
+                key={`${ingredient.name} ${index}`}
               >
-                {ingredient.type} - {ingredient.quantity}
+                {ingredient.name} - {ingredient.quantity}
               </Typography.P2>
             ) : null;
           })}
           <Spacer vertical={20} />
           <Typography.P2 type="bold" color="#FFFFFF">
-            {drink.strInstructions}
+            {drink.instructions}
           </Typography.P2>
         </Description>
         <Spacer vertical={20} />
