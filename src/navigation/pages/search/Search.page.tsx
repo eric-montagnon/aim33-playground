@@ -31,6 +31,14 @@ export const SearchPage = ({ navigation }: SearchScreenProps) => {
         value={input}
       />
       <StatusBar />
+      <Spacer vertical={20} />
+      <IconButton
+        Icon={LeftArrowIcon} // New button to navigate to ingredients search mode
+        onPress={() => {
+          navigation.navigate("SearchIngredients");
+        }}
+        accessibilityLabel="Go to ingredient mode"
+      />
       <DrinksList>
         {isLoading2 ? (
           <View>
