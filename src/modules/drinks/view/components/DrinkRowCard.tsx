@@ -1,5 +1,6 @@
 import styled from "@emotion/native";
-import { Drink } from "@src/modules/drinks/Drink.type";
+import { Drink } from "@src/modules/drinks/domain/drink.types";
+
 import { Spacer } from "@src/shared/view/components/Spacer/Spacer.component";
 import { Typography } from "@src/shared/view/components/Typography/Typography.component";
 import React from "react";
@@ -10,11 +11,11 @@ export const DrinkRowCard = ({ drink, onPress }: Props) => (
   <Row onPress={onPress}>
     <DrinkImage
       source={{
-        uri: drink.strDrinkThumb,
+        uri: drink.thumb,
       }}
     />
     <Spacer horizontal={10} />
-    <Typography.P2 type="bold">{drink.strDrink}</Typography.P2>
+    <Typography.P2 type="bold">{drink.name}</Typography.P2>
   </Row>
 );
 

@@ -1,5 +1,5 @@
 import { StackScreenProps } from "@react-navigation/stack";
-import { Drink } from "@src/modules/drinks/Drink.type";
+import { Drink } from "@src/modules/drinks/domain/drink.types";
 
 export type NavigatorStackParamList = {
   Welcome: undefined;

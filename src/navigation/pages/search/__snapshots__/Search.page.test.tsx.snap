@@ -235,17 +235,11 @@ exports[`Sign up Page displays properly 2`] = `
                 }
                 testID="search-bar"
                 underlineColorAndroid="transparent"
-                value=""
+                value="punch"
               />
               <View
-                pointerEvents="none"
-                style={
-                  {
-                    "marginLeft": 16,
-                    "position": "absolute",
-                    "right": 0,
-                  }
-                }
+                pointerEvents="auto"
+                style={{}}
                 testID="search-bar-icon-wrapper"
               >
                 <View
@@ -344,7 +338,7 @@ exports[`Sign up Page displays properly 2`] = `
                         style={
                           {
                             "backgroundColor": "transparent",
-                            "color": "rgba(255, 255, 255, 0)",
+                            "color": "rgba(73, 69, 79, 1)",
                             "fontFamily": "material-community",
                             "fontSize": 24,
                             "fontStyle": "normal",
